@@ -47,12 +47,37 @@ div, p {
 }
 
 input, textarea {
-    width:100%
+    width:100%;
+    background-color: rgba(0,0,0,0.1);
+    color:white;
 }
 
+#formSubmit { 
+    width:100%;
+}
+
+#team { list-style: none;margin: 0;
+    padding: 0;}
 ul#team > li {
     max-width: 250px;
+    margin:0 10px;
+    min-height:300px;
 }
+
+.avatar {
+    font-size:30px;
+    padding:2px;
+    float:left;
+}
+
+ul#team > li > div {
+    background-color:navy;
+    border-radius: 5px;
+    display:inline-block;
+    padding-left:5px;
+    padding-right:5px;
+}
+
 
 a {
     color:white;
