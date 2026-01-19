@@ -9,10 +9,10 @@
         <header>
             <nav id="navigation_bar" style="width:100%;display:flex;justify-content:space-between;align-items:center">
                 <div>
-                    LOGO  
-                    <h1 style="font-size:15px;display:inline">TravelBloom</h1>
+                    <img src="./img/airplane.png" height="40" alt="TravelBloom"/>
+                    <b style="font-size:25px;color:white;">TravelBloom</b>
                 </div>
-                <ul style="display:flex;justify-content:space-between;min-width:200px;">
+                <ul id="navbuttons">
                     <li><a href="#" onclick="navigateTo('home')" id="homeBtn">Home</a></li>
                     <li><a href="#" id="aboutBtn">About Us</a></li>
                     <li><a href="#" onclick="navigateTo('contact')" id="contactBtn">Contact Us</a></li>
@@ -30,9 +30,75 @@
         <div class="container" style="border:solid 1px black; min-height:70vh;margin-left:40px">
             <aside style="position:fixed;left:0; top:40%; width:50px;height:250px;border:solid 1px blue;overflow:hidden">icon1 icon2 icon3 icon4</aside>
             container
-            <div id="home" class="page">home</div>
-            <div id="about" class="page">about</div>
-            <div id="contact" class="page">contact</div>
+            <div id="home" class="page">
+                <div style="display:flex">
+                <div style="max-width:45vw;">
+                <h1 style="margin-top:10vh">Explore Your Next Dream Destination</h1>
+<br/>
+                <h3>Discover handpicked destinations, personalized recommendations, and unforgettable experiences — all in one place.</h3>
+                <br/>
+                <p>TravelBloom helps you turn travel dreams into real journeys. Whether you’re seeking hidden gems, iconic landmarks, or authentic local experiences, our smart recommendations guide you every step of the way. Explore the world your way, with confidence and ease.</p>
+                <br/>
+                <button>Book Now</button>
+                </div>
+                <div style="max-width:45vw;margin-left:30px">
+                    recomendations here
+                    </div>
+                </div>
+
+            </div>
+            <div id="about" class="page">
+                <h1>About us</h1>
+                <br/>
+                <div>
+                    At TravelBloom, we believe travel should be inspiring, simple, and deeply personal.
+                <br/>
+We are a passionate team of travel lovers, explorers, and digital creators dedicated to helping people discover destinations that truly fit their style.<br/><br/>
+Our tour app analyzes your interests, travel mood, and preferences to deliver tailored recommendations — from must-see attractions to off-the-beaten-path adventures. Whether you’re planning a weekend escape or a once-in-a-lifetime trip, we make discovering the world effortless and exciting.<br/>
+Our mission is to connect people with meaningful travel experiences that create lasting memories.<br/><br/>
+Our values are curiosity, authenticity, innovation, and putting travelers first — always.<br/>
+                </div>
+                <br/>
+                <br/>
+                <div id="our_team" style="display:flex">
+                    <h1>Our Team</h1>
+                        <ul id="team" style="display:flex">
+                            <li>
+                                <b>John Doe</b><br/>John leads the vision behind TravelBloom. With a passion for travel and technology, he focuses on creating seamless experiences that inspire people to explore the world with confidence.<div>CEO</div>
+                            </li>
+                            <li><b>Celina Thomas</b><br/>Celina coordinates our product and design teams, ensuring every feature is intuitive, beautiful, and traveler-friendly. She believes great journeys start with great planning tools.<div>Team Lead</div></li>
+                            <li><b>Mike Tysen</b><br/>Mike oversees partnerships, destination data, and tour recommendations. His goal is to make sure every suggestion feels relevant, reliable, and exciting.<div>Delivery Head</div></li>
+                            <ul>
+                </div>
+            </div>
+            <div id="contact" class="page">
+                <div>
+                    <div style="float:left;width:49%">
+                        <h1 style="margin-top:20vh">Contact Us </h1>
+                        <br/>
+                        <p>
+                        <b>Have a question, suggestion, or need help planning your next adventure?</b>
+Our team is here to help you every step of the way. Send us a message and we’ll get back to you as soon as possible.
+                        </p>
+                    </div>
+                    <div style="float:left;width:49%">
+                        <form>
+                            Name: 
+                            <input type="text" id="fullname" name="fullname" placeholder="Enter your name">
+<br/>
+Email:
+<input type="text" id="emailaddress" name="emailaddress" placeholder="Enter your email address">
+<br/>
+Message:
+<textarea id="message" name="messsage" placeholder="Tell us how we can help you"></textarea>
+<br/>
+<button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div style="clear:both" />
+                </div>
+
+            </div>
             <div id="recommendations" class="page">recommendations</div>
         </div>
         
