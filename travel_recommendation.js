@@ -69,9 +69,9 @@ const onSearch = () =>{
             console.log('loaded data', data, 'used', usedKeyword);
     
             const d = usedKeyword === 'countries' ?  data[usedKeyword].map( c => c.cities).flat() : data[usedKeyword];
-            if (d.length > 3) {
+            if (d.length > 2) {
                 d.sort( (a,b) => Math.random() > 0.5)
-                d.length = 3;
+                d.length = 2;
             }
             const list = d.map(toElement).join('');
 
