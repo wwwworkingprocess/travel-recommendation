@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TravelBloom Travel Recommendations</title>
+        <link rel="stylesheet" href="./travel_recommendation.css">
+    </head>
+    <body>
+        <header>
+            <nav id="navigation_bar" style="width:100%;display:flex;justify-content:space-between;align-items:center">
+                <div>
+                    LOGO  
+                    <h1 style="font-size:15px;display:inline">TravelBloom</h1>
+                </div>
+                <ul style="display:flex;justify-content:space-between;min-width:200px;">
+                    <li><a href="#" onclick="navigateTo('home')" id="homeBtn">Home</a></li>
+                    <li><a href="#" id="aboutBtn">About Us</a></li>
+                    <li><a href="#" onclick="navigateTo('contact')" id="contactBtn">Contact Us</a></li>
+                    
+                </ul>
+                <div id="search_bar">
+                    <input type="text" id="destinationInput" placeholder="Enter a destination or keyword">
+                    <button id='btnSearch'>Search</button>
+                    <button id='btnClear'>Clear</button>
+                </div>
+            </nav>
+        </header>
+
+        
+        <div class="container" style="border:solid 1px black; min-height:70vh;margin-left:40px">
+            <aside style="position:fixed;left:0; top:40%; width:50px;height:250px;border:solid 1px blue;overflow:hidden">icon1 icon2 icon3 icon4</aside>
+            container
+            <div id="home" class="page">home</div>
+            <div id="about" class="page">about</div>
+            <div id="contact" class="page">contact</div>
+            <div id="recommendations" class="page">recommendations</div>
+        </div>
+        
+        <script src="./travel_recommendation.js"></script>
+    </body>
+</html>
